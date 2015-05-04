@@ -1,20 +1,15 @@
-// This is a manifest file that'll be compiled into application.js.
+// This is a manifest file that'll be compiled into application.js,
+// which will include all the files listed below.
 //
-// Any JavaScript file within this directory can be referenced here using a relative path.
+// Any JavaScript file within this directory can be referenced here
+// using a relative path.
 //
-// You're free to add application-wide JavaScript to this file, but it's generally better 
-// to create separate JavaScript files as needed.
+// You're free to add application-wide JavaScript to this file or
+// create separate JavaScript files as needed.
+//
+// For more information on manifests and directives, see
+// https://bertramdev.github.io/asset-pipeline/guide/usage.html#directives
 //
 //= require jquery
-//= require_tree .
-//= require_self
-
-if (typeof jQuery !== 'undefined') {
-	(function($) {
-		$('#spinner').ajaxStart(function() {
-			$(this).fadeIn();
-		}).ajaxStop(function() {
-			$(this).fadeOut();
-		});
-	})(jQuery);
-}
+//= require bootstrap
+//

@@ -1,13 +1,51 @@
 /*
-* This is a manifest file that'll be compiled into application.css, which will include all the files
-* listed below.
+* This is a manifest file that'll be compiled into application.css,
+* which will include all the files listed below.
 *
-* Any CSS file within this directory can be referenced here using a relative path.
+* Any CSS file within this directory can be referenced here using a
+* relative path.
 *
-* You're free to add application-wide styles to this file and they'll appear at the top of the
-* compiled file, but it's generally better to create a new file per style scope.
+* You're free to add application-wide styles to this file or create a
+* new file per style scope and include it with a directive below.
 *
-*= require main
-*= require mobile
-*= require_self
+* For more information on manifests and directives, see
+* https://bertramdev.github.io/asset-pipeline/guide/usage.html#directives
+*
+*= require bootstrap
 */
+
+/*----------------------------------------------------
+STRUCTURE
+----------------------------------------------------*/
+
+body {
+    overflow-y: scroll;
+    margin: 0;
+    background: #f8f8f8;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.wrapper {
+    background: #fff;
+    margin: 20px 0;
+    position: relative;
+    padding: 30px;
+    min-height: 540px;
+    -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+#dashboard {
+    margin: 0 auto 15px;
+    width: 1135px;
+}
+
+/*----------------------------------------------------
+HEADER
+----------------------------------------------------*/
+
+.navbar-brand {
+    margin-bottom: 18px;
+}
